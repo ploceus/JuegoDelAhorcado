@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 	<meta http-equiv="refresh" content="3">
+ -->	<meta charset="UTF-8">
+	<title>Ahorcado</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="contenedor" class="invisible">
+		<h2>Adivina la palabra letra a letra</h2>
+		<div id="panel">
+			<span>Elige una letra:</span>
+			<input type="text" id="letra" size="1" maxlength="1" />
+			<br />
+			<input type="button" id="boton" value="¿Acertaste? " onclick="elegirLetra()" />
+		</div>
+		<div id="solucion">
+			<input type="text" class="pista" maxlength="1" size="1" value="*">
+			<input type="text" class="pista" maxlength="1" size="1" value="*">
+			<input type="text" class="pista" maxlength="1" size="1" value="*">
+			<input type="text" class="pista" maxlength="1" size="1" value="*">
+			<input type="text" class="pista" maxlength="1" size="1" value="*">
+			<input type="text" class="pista" maxlength="1" size="1" value="*">
+			<input type="text" class="pista" maxlength="1" size="1" value="*">
+			<input type="text" class="pista" maxlength="1" size="1" value="*">
+			<input type="text" class="pista" maxlength="1" size="1" value="*">
+		</div>
+	</div>
+	<div id="botonInicio" class="" onclick="comenzamos()">
+		<p>Si aceptas el reto haz click</p>
+	</div>
+	<canvas id="c"></canvas>
+
+	<!-- Archivos y script javascript -->
+	<script src="js/main.js"></script>
+	<script>
+		iniciar()
+	</script>
+	
+</body>
+</html>
